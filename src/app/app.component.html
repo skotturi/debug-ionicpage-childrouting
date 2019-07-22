@@ -15,6 +15,10 @@
                 {{p.title}}
               </ion-label>
             </ion-item>
+            <ion-list style="padding-left: 100px">
+              <ion-item [routerLink]="[p.url] + '/part-one'">Part One</ion-item>
+              <ion-item [routerLink]="[p.url]  + '/part-two'">Part Two</ion-item>
+            </ion-list>
           </ion-menu-toggle>
         </ion-list>
       </ion-content>
